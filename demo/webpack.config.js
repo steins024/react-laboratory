@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './index.js',
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, '../dist', 'demo'),
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, './dist'),
   },
   module: {
     loaders: [
@@ -16,8 +16,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      // 'react-laboratory': path.resolve(__dirname, '../dist/index'),
-      ReactLaboratory: '../dist/index',
+      ReactLaboratory: path.resolve(__dirname, '../dist/bundle'),
     },
   },
   devtool: 'source-map',

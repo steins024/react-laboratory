@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "demo": "webpack && cd demo && webpack"
+    "demo": "webpack && cd demo && webpack",
+    "clean": "rm -r dist && rm -r **/dist"
   }
 }

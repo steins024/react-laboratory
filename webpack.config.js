@@ -3,8 +3,10 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'index.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'ReactLaboratory',
+    libraryTarget: 'umd',
   },
   module: {
     loaders: [

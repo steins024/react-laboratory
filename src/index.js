@@ -6,5 +6,3 @@ export function testfunc() {
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   return element;
 }
-
-export const hezhan = 'hezhan';

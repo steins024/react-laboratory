@@ -1,5 +1,4 @@
-import { testfunc, hezhan } from 'ReactLaboratory';
+import { testfunc } from 'ReactLaboratory';
 
-console.log(hezhan);
 const element = testfunc();
 document.body.appendChild(element);
